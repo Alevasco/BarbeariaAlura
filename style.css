@@ -1,0 +1,177 @@
+
+
+
+header {
+    background: #BBBBBB;
+      
+}
+
+.caixa {
+    position: relative;
+    /* posição relativa */ 
+    width: 940px;
+    /* largura */
+    margin: 0 auto;
+    /* margem - top 0 e direita auto */ 
+}
+
+nav {
+    position: absolute;
+    /* posição absoluta - permite mudar a posição inicial em que ele se encontra */
+    top: 110px;
+    /* topo */
+    right: 0;
+    /* direita */
+}
+
+
+nav li {
+    display: inline;
+    /* inline permite colocar conteudo ao lado - block não permite */ 
+    margin: 0 0 0 15px;
+    /* margem externa */
+
+}
+
+nav a {    
+    text-transform: uppercase;
+    /* transformação do texto - tudo em maiúsculo */
+    color: black;
+    /* cor da fonte */ 
+    font-weight: bold;
+    /* espessura da fonte - negrito */
+    font-size: 22px;
+    /* tamanho da fonte */
+    text-decoration: none;
+    /* decoração do texto - não */ 
+}
+
+nav a:hover {
+    color: #C78;
+    text-decoration: underline;
+}
+
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    /* largura do conteudo e podendo alterar o tamanho */
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    /* alinhamento vertical - cima/topo */
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    /* borda arredondada */
+}
+
+.produtos li:hover {
+    border-color: #C78;
+}
+
+.produtos li:hover h2 {
+    font-size: 34px;    
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+    /* peso da fonte - negrito */
+}
+
+.produtos-descricao {
+   font-size: 18px;
+}
+
+
+.produtos-preco { 
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+footer {
+    text-align: center;
+    background: url(img/bg.jpg);
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+    
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    /* espaçamento interno CIMA 15PX E LADOS 0; */
+    background: #C78;
+    color: cornsilk;
+    font-weight: bold;
+    /* texto em negrito */
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+     /* transição da cor em cima do mouse mudar */
+     cursor: pointer;
+     /* quando o mouse estiver por cima seja a mãozinha e não a seta */
+}
+
+.enviar:hover /* quando o mouse está por cima */ {
+    background: rgb(241, 77, 132);
+    transform: scale(1.2);
+    /* item aumenta em 20% */
+}
+
+table {
+    margin: 20px 40px;
+}
+
+thead {
+    background: palevioletred;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid palevioletred;
+    padding: 8px 15px ;
+}
+
